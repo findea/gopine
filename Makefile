@@ -1,4 +1,4 @@
-APP_NAME=goweb
+APP_NAME=example
 APP_NAME_LINUX=$(APP_NAME)_linux
 
 # go
