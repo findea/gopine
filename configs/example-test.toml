@@ -1,0 +1,28 @@
+[redis]
+    addrs = ["redis:6379"]
+    pwd = ""
+    db = 3
+
+[mysql.default]
+    dbUrl = "username:passowrd@(dbhost:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Asia%2FShanghai"
+    maxIdleConns = 1
+    maxOpenConns = 3
+    connMaxLifetime = 7200
+    logMode = true
+
+[log]
+    output = "stdout"
+    level = "info"
+    format = "text"
+
+[jwt]
+    SecretKey = "secret_key"
+    ExpiresAt = "72h"
+
+[server]
+    WebAddress = "8883"
+
+[trace]
+    ServiceName = "goweb-test"
+    ReporterType = "file"
+    ReporterUrl = "/tmp/trace.log"

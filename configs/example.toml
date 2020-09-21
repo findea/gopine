@@ -1,0 +1,34 @@
+[redis]
+    addrs = ["redis:6379"]
+    pwd = ""
+    db = 1
+
+[mysql.default]
+    dbUrl = "username:passowrd@(dbhost:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Asia%2FShanghai"
+    maxIdleConns = 1
+    maxOpenConns = 3
+    connMaxLifetime = 7200
+    logMode = true
+
+[log]
+    Output = "stdout"
+    Level = "debug"
+    Format = "text"
+
+[jwt]
+    SecretKey = "secret_key"
+    ExpiresAt = "87600h"
+
+[server]
+    WebAddress = ":8880"
+
+[trace]
+    ServiceName = "goweb-local"
+    ReporterType = "file"
+    ReporterUrl = "/tmp/trace.log"
+
+#[trace]
+#    ReporterType = "http"
+#    ReporterUrl = "http://jaeger:9412/api/v2/spans"
+#    BatchSize = 1
+#    BatchInterval = "5ms"

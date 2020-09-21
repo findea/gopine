@@ -1,0 +1,33 @@
+[redis]
+    addrs = ["redis:6379"]
+    pwd = ""
+    db = 2
+
+[mysql.default]
+    dbUrl = "username:passowrd@(dbhost:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Asia%2FShanghai"
+    maxIdleConns = 5
+    maxOpenConns = 10
+    connMaxLifetime = 7200
+    logMode = false
+
+[log]
+    Output = "/tmp/goweb.log"
+    Level = "info"
+    Format = "json"
+    RotationTime = "day"
+    RotationCount = 7
+
+[jwt]
+    SecretKey = "secret_key"
+    ExpiresAt = "72h"
+
+[server]
+    WebAddress = ":8881"
+
+[[mail]]
+    Key = "163.com"
+    UserName= "YourName"
+    UserEmail= "youremail@163.com"
+    Password= "passowrd"
+    Host = "smtp.163.com"
+    Port = 465
