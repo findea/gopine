@@ -32,7 +32,6 @@ func (s *Server) initHTMLRouter() {
 
 	s.LoadHTMLGlob(fmt.Sprintf("%s%c*", p, filepath.Separator))
 
-
 	group := s.Group("/")
 
 	group.GET("/", func(c *gin.Context) {

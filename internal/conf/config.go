@@ -12,13 +12,13 @@ import (
 )
 
 type Config struct {
-	Log    *log.Config
-	Redis  *redis.Config
-	MySQL  map[string]*mysql.Config
-	Mail   []*mail.Config
-	JWT    *JWT
-	Trace  *lighttracer.Config
-	Server *Server
+	Log       *log.Config
+	Redis     *redis.Config
+	MySQL     map[string]*mysql.Config
+	Mail      []*mail.Config
+	JWT       *JWT
+	Trace     *lighttracer.Config
+	Server    *Server
 	Snowflake *snowflake.Config
 }
 

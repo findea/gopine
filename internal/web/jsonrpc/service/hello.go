@@ -6,7 +6,6 @@ import (
 )
 
 type HelloService struct {
-
 }
 
 func (h *HelloService) Say(_ *http.Request, args *model.HelloArgs, reply *model.HelloReply) error {

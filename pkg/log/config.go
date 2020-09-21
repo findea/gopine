@@ -39,7 +39,7 @@ func Init(config *Config) error {
 	case FormatJson:
 		logrus.SetFormatter(&logrus.JSONFormatter{})
 	case FormatText:
-		logrus.SetFormatter(&logrus.TextFormatter{FullTimestamp:true})
+		logrus.SetFormatter(&logrus.TextFormatter{FullTimestamp: true})
 	}
 
 	// output

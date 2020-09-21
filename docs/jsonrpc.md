@@ -8,9 +8,8 @@ curl -s \
 -X POST \
 -H "Accept: application/json" \
 -H "Content-type: application/json" \
--H "X-TraceID: hello" \
 -d '{"jsonrpc":"2.0", "id": 123, "method": "HelloService.Say", "params":[{"who":"changnian"}]}'  \
-http://127.0.0.1:8880/goweb/jsonrpc
+http://127.0.0.1:8880/jsonrpc
 ```
 
 - 输出示例
